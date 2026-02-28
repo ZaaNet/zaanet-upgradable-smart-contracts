@@ -1,0 +1,26 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deployArbSepolia": "hardhat ignition deploy ignition/modules/ZaaNetDeploymentModule.ts --network arbitrumSepolia",
+    "deployTestUSDTArbSepolia": "hardhat ignition deploy ignition/modules/deployTestUSDT.ts --network arbitrumSepolia",
+    "deployBaseSepolia": "hardhat ignition deploy ignition/modules/ZaaNetDeploymentModule.ts --network baseSepolia",
+    "verifyBaseSepolia": "hardhat ignition verify chain-84532 --network baseSepolia --include-unrelated-contracts",
+    "deployTestUSDTBaseSepolia": "hardhat ignition deploy ignition/modules/deployTestUSDT.ts --network baseSepolia",
+    "verifyArbSepolia": "hardhat ignition verify chain-421614 --network arbitrumSepolia",
+    "deployArbMainnet": "hardhat ignition deploy ignition/modules/ZaaNetDeploymentModule.ts --network arbitrumOne",
+    "verifyArbMainnet": "hardhat ignition verify chain-42161 --network arbitrumOne --include-unrelated-contracts"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.23.0",
+    "solc": "^0.8.28"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "@openzeppelin/contracts-upgradeable": "^5.6.1",
+    "@openzeppelin/hardhat-upgrades": "^3.9.1",
+    "dotenv": "^16.5.0"
+  }
+}
