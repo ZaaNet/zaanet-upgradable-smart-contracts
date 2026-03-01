@@ -9,8 +9,9 @@
     "verifyBaseSepolia": "hardhat ignition verify chain-84532 --network baseSepolia --include-unrelated-contracts",
     "deployTestUSDTBaseSepolia": "hardhat ignition deploy ignition/modules/deployTestUSDT.ts --network baseSepolia",
     "verifyArbSepolia": "hardhat ignition verify chain-421614 --network arbitrumSepolia",
-    "deployArbMainnet": "hardhat ignition deploy ignition/modules/ZaaNetDeploymentModule.ts --network arbitrumOne",
-    "verifyArbMainnet": "hardhat ignition verify chain-42161 --network arbitrumOne --include-unrelated-contracts"
+    "deployArbMainnet": "hardhat run scripts/deploy-upgradable.ts --network arbitrumOne",
+    "verifyArbMainnet": "hardhat ignition verify chain-42161 --network arbitrumOne --include-unrelated-contracts",
+    "verifyUpgradableArbMainnet": "node scripts/verify-upgradable.js"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",

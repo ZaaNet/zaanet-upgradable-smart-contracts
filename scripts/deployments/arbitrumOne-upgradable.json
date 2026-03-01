@@ -1,0 +1,18 @@
+{
+  "ZaaNetStorageV1": {
+    "proxy": "0x5bD1B64Ce7aD3cca9379Cf33237B03d3d1a2A956",
+    "implementation": "0x5c7a586242d7d4b67d6507B0e0aE677D06267EaD"
+  },
+  "ZaaNetAdminV1": {
+    "proxy": "0xC4115e392901cBfE99B46F8fc804B882b128C05a",
+    "implementation": "0x7e33B45e4647B24337428c8AcEC1634001017F9f"
+  },
+  "ZaaNetNetworkV1": {
+    "proxy": "0xb15570BDd81837F92ABB706A00585b37ab59aC6e",
+    "implementation": "0x1A6bd1be31BD444F4a81784171e3d01EFfA2ab83"
+  },
+  "ZaaNetPaymentV1": {
+    "proxy": "0x11C7d4D6CFCf564959e052803aE18Adb3290c640",
+    "implementation": "0x7D9b6e34FAE27BF28a32bc49A9BEB87b127D7262"
+  }
+}

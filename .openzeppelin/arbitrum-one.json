@@ -1,0 +1,1193 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x5bD1B64Ce7aD3cca9379Cf33237B03d3d1a2A956",
+      "txHash": "0x30a7f83b5c84c57a27c8c1fb483256ae5902d93eb7e325813db1b8b07ed74fe4",
+      "kind": "uups"
+    },
+    {
+      "address": "0xC4115e392901cBfE99B46F8fc804B882b128C05a",
+      "txHash": "0x5cebab03471f3ce12746aed29fe489ebf915a9a04b61af2ce727bafd77a1be99",
+      "kind": "uups"
+    },
+    {
+      "address": "0xb15570BDd81837F92ABB706A00585b37ab59aC6e",
+      "txHash": "0x6c9d390d362c3bc2ab001b044742a4b12d003be951ac66034d4b7fe72e8ef4cb",
+      "kind": "uups"
+    },
+    {
+      "address": "0x11C7d4D6CFCf564959e052803aE18Adb3290c640",
+      "txHash": "0x3f3d9b78ee6c8562d8d579c8b3a28dbfaa39a2105b5ac15cb9b0c4d6680c1573",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "29fd403113396c8faab6ff6975885072ef394138ed0311effafdb0542b18fd94": {
+      "address": "0x5c7a586242d7d4b67d6507B0e0aE677D06267EaD",
+      "txHash": "0x84ea72b38414fd4895cdc03e410ac93e94c2ee37171bc03b865d5bd2f1507b9c",
+      "layout": {
+        "solcVersion": "0.8.26",
+        "storage": [
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "contracts/utils/ReentrancyGuardUpgradeable.sol:28"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "contracts/utils/ReentrancyGuardUpgradeable.sol:78"
+          },
+          {
+            "label": "allowedCallers",
+            "offset": 0,
+            "slot": "50",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "ZaaNetStorageV1",
+            "src": "contracts/ZaaNetStorageV1.sol:31"
+          },
+          {
+            "label": "networkIdCounter",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_uint256",
+            "contract": "ZaaNetStorageV1",
+            "src": "contracts/ZaaNetStorageV1.sol:32"
+          },
+          {
+            "label": "totalSessionPaymentsAmount",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_uint256",
+            "contract": "ZaaNetStorageV1",
+            "src": "contracts/ZaaNetStorageV1.sol:33"
+          },
+          {
+            "label": "totalWithdrawalsAmount",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "ZaaNetStorageV1",
+            "src": "contracts/ZaaNetStorageV1.sol:34"
+          },
+          {
+            "label": "totalHostingFeeAmount",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_uint256",
+            "contract": "ZaaNetStorageV1",
+            "src": "contracts/ZaaNetStorageV1.sol:35"
+          },
+          {
+            "label": "hostNetworkCount",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ZaaNetStorageV1",
+            "src": "contracts/ZaaNetStorageV1.sol:39"
+          },
+          {
+            "label": "totalClientVoucherFeeAmount",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_uint256",
+            "contract": "ZaaNetStorageV1",
+            "src": "contracts/ZaaNetStorageV1.sol:42"
+          },
+          {
+            "label": "totalHostVoucherFeeAmount",
+            "offset": 0,
+            "slot": "57",
+            "type": "t_uint256",
+            "contract": "ZaaNetStorageV1",
+            "src": "contracts/ZaaNetStorageV1.sol:43"
+          },
+          {
+            "label": "networks",
+            "offset": 0,
+            "slot": "58",
+            "type": "t_mapping(t_uint256,t_struct(Network)7067_storage)",
+            "contract": "ZaaNetStorageV1",
+            "src": "contracts/ZaaNetStorageV1.sol:46"
+          },
+          {
+            "label": "hostEarnings",
+            "offset": 0,
+            "slot": "59",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ZaaNetStorageV1",
+            "src": "contracts/ZaaNetStorageV1.sol:47"
+          },
+          {
+            "label": "hostNetworkIds",
+            "offset": 0,
+            "slot": "60",
+            "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+            "contract": "ZaaNetStorageV1",
+            "src": "contracts/ZaaNetStorageV1.sol:48"
+          },
+          {
+            "label": "networkExists",
+            "offset": 0,
+            "slot": "61",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "contract": "ZaaNetStorageV1",
+            "src": "contracts/ZaaNetStorageV1.sol:49"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "62",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ZaaNetStorageV1",
+            "src": "contracts/ZaaNetStorageV1.sol:300"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)416_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)115_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(address => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Network)7067_storage)": {
+            "label": "mapping(uint256 => struct ZaaNetStorageV1.Network)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Network)7067_storage": {
+            "label": "struct ZaaNetStorageV1.Network",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "hostAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "pricePerSession",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "mongoDataId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "createdAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "updatedAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              }
+            ],
+            "numberOfBytes": "224"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "5dc7c08ae4576069eced529ed91f3c5573f2b6f55b210b8819c261f3ded1975f": {
+      "address": "0x7e33B45e4647B24337428c8AcEC1634001017F9f",
+      "txHash": "0x815891eafc67d193746797470d32a163641ef41a6f32e0ef5c18c1412a9e3a8d",
+      "layout": {
+        "solcVersion": "0.8.26",
+        "storage": [
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "contracts/utils/ReentrancyGuardUpgradeable.sol:28"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "contracts/utils/ReentrancyGuardUpgradeable.sol:78"
+          },
+          {
+            "label": "storageContract",
+            "offset": 0,
+            "slot": "50",
+            "type": "t_contract(ZaaNetStorageV1)7910",
+            "contract": "ZaaNetAdminV1",
+            "src": "contracts/ZaaNetAdminV1.sol:26"
+          },
+          {
+            "label": "treasuryAddress",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "ZaaNetAdminV1",
+            "src": "contracts/ZaaNetAdminV1.sol:27"
+          },
+          {
+            "label": "paymentAddress",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_address",
+            "contract": "ZaaNetAdminV1",
+            "src": "contracts/ZaaNetAdminV1.sol:28"
+          },
+          {
+            "label": "platformFeePercent",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "ZaaNetAdminV1",
+            "src": "contracts/ZaaNetAdminV1.sol:29"
+          },
+          {
+            "label": "hostingFee",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_uint256",
+            "contract": "ZaaNetAdminV1",
+            "src": "contracts/ZaaNetAdminV1.sol:30"
+          },
+          {
+            "label": "hostVoucherFeeHours",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_uint256",
+            "contract": "ZaaNetAdminV1",
+            "src": "contracts/ZaaNetAdminV1.sol:33"
+          },
+          {
+            "label": "hostVoucherFeeDays",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_uint256",
+            "contract": "ZaaNetAdminV1",
+            "src": "contracts/ZaaNetAdminV1.sol:34"
+          },
+          {
+            "label": "hostVoucherFeeMonths",
+            "offset": 0,
+            "slot": "57",
+            "type": "t_uint256",
+            "contract": "ZaaNetAdminV1",
+            "src": "contracts/ZaaNetAdminV1.sol:35"
+          },
+          {
+            "label": "emergencyMode",
+            "offset": 0,
+            "slot": "58",
+            "type": "t_bool",
+            "contract": "ZaaNetAdminV1",
+            "src": "contracts/ZaaNetAdminV1.sol:38"
+          },
+          {
+            "label": "emergencyOperators",
+            "offset": 0,
+            "slot": "59",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "ZaaNetAdminV1",
+            "src": "contracts/ZaaNetAdminV1.sol:39"
+          },
+          {
+            "label": "lastEmergencyToggleTime",
+            "offset": 0,
+            "slot": "60",
+            "type": "t_uint256",
+            "contract": "ZaaNetAdminV1",
+            "src": "contracts/ZaaNetAdminV1.sol:43"
+          },
+          {
+            "label": "lastEmergencyToggleBy",
+            "offset": 0,
+            "slot": "61",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ZaaNetAdminV1",
+            "src": "contracts/ZaaNetAdminV1.sol:44"
+          },
+          {
+            "label": "feeHistory",
+            "offset": 0,
+            "slot": "62",
+            "type": "t_array(t_struct(FeeChange)3337_storage)dyn_storage",
+            "contract": "ZaaNetAdminV1",
+            "src": "contracts/ZaaNetAdminV1.sol:54"
+          },
+          {
+            "label": "treasuryHistory",
+            "offset": 0,
+            "slot": "63",
+            "type": "t_array(t_struct(TreasuryChange)3350_storage)dyn_storage",
+            "contract": "ZaaNetAdminV1",
+            "src": "contracts/ZaaNetAdminV1.sol:64"
+          },
+          {
+            "label": "hostingFeeHistory",
+            "offset": 0,
+            "slot": "64",
+            "type": "t_array(t_struct(HostingFeeChange)3363_storage)dyn_storage",
+            "contract": "ZaaNetAdminV1",
+            "src": "contracts/ZaaNetAdminV1.sol:74"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "65",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ZaaNetAdminV1",
+            "src": "contracts/ZaaNetAdminV1.sol:543"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)416_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)115_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_struct(FeeChange)3337_storage)dyn_storage": {
+            "label": "struct ZaaNetAdminV1.FeeChange[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(HostingFeeChange)3363_storage)dyn_storage": {
+            "label": "struct ZaaNetAdminV1.HostingFeeChange[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(TreasuryChange)3350_storage)dyn_storage": {
+            "label": "struct ZaaNetAdminV1.TreasuryChange[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_contract(ZaaNetStorageV1)7910": {
+            "label": "contract ZaaNetStorageV1",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(FeeChange)3337_storage": {
+            "label": "struct ZaaNetAdminV1.FeeChange",
+            "members": [
+              {
+                "label": "oldFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "newFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "changedBy",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(HostingFeeChange)3363_storage": {
+            "label": "struct ZaaNetAdminV1.HostingFeeChange",
+            "members": [
+              {
+                "label": "oldFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "newFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "changedBy",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(TreasuryChange)3350_storage": {
+            "label": "struct ZaaNetAdminV1.TreasuryChange",
+            "members": [
+              {
+                "label": "oldTreasury",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "newTreasury",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "timestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "changedBy",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "254d26724b4355278d2a01e556636a52be6d76e5bb7d0ec58bb96c4bd47a15bf": {
+      "address": "0x1A6bd1be31BD444F4a81784171e3d01EFfA2ab83",
+      "txHash": "0x9e639134972c30ba1613ec2e3c1d159423c05357157ea31158734a2f97c19d28",
+      "layout": {
+        "solcVersion": "0.8.26",
+        "storage": [
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "contracts/utils/ReentrancyGuardUpgradeable.sol:28"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "contracts/utils/ReentrancyGuardUpgradeable.sol:78"
+          },
+          {
+            "label": "storageContract",
+            "offset": 0,
+            "slot": "50",
+            "type": "t_contract(ZaaNetStorageV1)7910",
+            "contract": "ZaaNetNetworkV1",
+            "src": "contracts/ZaaNetNetworkV1.sol:26"
+          },
+          {
+            "label": "adminContract",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_contract(IZaaNetAdmin)8077",
+            "contract": "ZaaNetNetworkV1",
+            "src": "contracts/ZaaNetNetworkV1.sol:27"
+          },
+          {
+            "label": "usdt",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_contract(IERC20)1997",
+            "contract": "ZaaNetNetworkV1",
+            "src": "contracts/ZaaNetNetworkV1.sol:28"
+          },
+          {
+            "label": "isHost",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "ZaaNetNetworkV1",
+            "src": "contracts/ZaaNetNetworkV1.sol:39"
+          },
+          {
+            "label": "hostNetworks",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+            "contract": "ZaaNetNetworkV1",
+            "src": "contracts/ZaaNetNetworkV1.sol:40"
+          },
+          {
+            "label": "networkToHost",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_mapping(t_uint256,t_address)",
+            "contract": "ZaaNetNetworkV1",
+            "src": "contracts/ZaaNetNetworkV1.sol:41"
+          },
+          {
+            "label": "lastRegistrationTime",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ZaaNetNetworkV1",
+            "src": "contracts/ZaaNetNetworkV1.sol:44"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "57",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ZaaNetNetworkV1",
+            "src": "contracts/ZaaNetNetworkV1.sol:471"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)416_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)115_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC20)1997": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IZaaNetAdmin)8077": {
+            "label": "contract IZaaNetAdmin",
+            "numberOfBytes": "20"
+          },
+          "t_contract(ZaaNetStorageV1)7910": {
+            "label": "contract ZaaNetStorageV1",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(address => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "2aca803c58b316282886fe0e9c7e86611e1a9d17bc58a8887676117b1998439c": {
+      "address": "0x7D9b6e34FAE27BF28a32bc49A9BEB87b127D7262",
+      "txHash": "0xb3c848ada0b8181be2e5efd27a52b079c405efaf6b3185b92686a4e5e1d62a29",
+      "layout": {
+        "solcVersion": "0.8.26",
+        "storage": [
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "contracts/utils/ReentrancyGuardUpgradeable.sol:28"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "contracts/utils/ReentrancyGuardUpgradeable.sol:78"
+          },
+          {
+            "label": "usdt",
+            "offset": 0,
+            "slot": "50",
+            "type": "t_contract(IERC20)1997",
+            "contract": "ZaaNetPaymentV1",
+            "src": "contracts/ZaaNetPaymentV1.sol:33"
+          },
+          {
+            "label": "tokenDecimals",
+            "offset": 20,
+            "slot": "50",
+            "type": "t_uint8",
+            "contract": "ZaaNetPaymentV1",
+            "src": "contracts/ZaaNetPaymentV1.sol:34"
+          },
+          {
+            "label": "storageContract",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_contract(IZaaNetStorage)8446",
+            "contract": "ZaaNetPaymentV1",
+            "src": "contracts/ZaaNetPaymentV1.sol:36"
+          },
+          {
+            "label": "adminContract",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_contract(IZaaNetAdmin)8077",
+            "contract": "ZaaNetPaymentV1",
+            "src": "contracts/ZaaNetPaymentV1.sol:37"
+          },
+          {
+            "label": "dailyWithdrawalLimit",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "ZaaNetPaymentV1",
+            "src": "contracts/ZaaNetPaymentV1.sol:40"
+          },
+          {
+            "label": "dailyWithdrawals",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "contract": "ZaaNetPaymentV1",
+            "src": "contracts/ZaaNetPaymentV1.sol:41"
+          },
+          {
+            "label": "whitelistedTokens",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "ZaaNetPaymentV1",
+            "src": "contracts/ZaaNetPaymentV1.sol:44"
+          },
+          {
+            "label": "whitelistedTokenList",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "ZaaNetPaymentV1",
+            "src": "contracts/ZaaNetPaymentV1.sol:45"
+          },
+          {
+            "label": "processedVouchers",
+            "offset": 0,
+            "slot": "57",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "contract": "ZaaNetPaymentV1",
+            "src": "contracts/ZaaNetPaymentV1.sol:48"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "58",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ZaaNetPaymentV1",
+            "src": "contracts/ZaaNetPaymentV1.sol:535"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)416_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)115_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC20)1997": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IZaaNetAdmin)8077": {
+            "label": "contract IZaaNetAdmin",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IZaaNetStorage)8446": {
+            "label": "contract IZaaNetStorage",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

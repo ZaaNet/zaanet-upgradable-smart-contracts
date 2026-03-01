@@ -1,4 +1,6 @@
 import { ethers, upgrades } from "hardhat";
+import fs from "fs";
+import path from "path";
 
 async function main() {
     // Configuration - Update these addresses as needed per chain. Use .env for token/multisig.
@@ -166,6 +168,29 @@ async function main() {
     console.log(`   ZaaNetNetworkV1: ${zaaNetNetwork}`);
     console.log(`   ZaaNetPaymentV1: ${zaaNetPayment}`);
     console.log(`\n💾 Save these addresses for future upgrades!`);
+
+    // After all deployments and before summary:
+const outputPath = path.join(__dirname, "../deployments/arbitrumOne-upgradable.json");
+const deploymentData = {
+  ZaaNetStorageV1: {
+    proxy: zaaNetStorage,
+    implementation: storageImplementation,
+  },
+  ZaaNetAdminV1: {
+    proxy: zaaNetAdmin,
+    implementation: adminImplementation,
+  },
+  ZaaNetNetworkV1: {
+    proxy: zaaNetNetwork,
+    implementation: networkImplementation,
+  },
+  ZaaNetPaymentV1: {
+    proxy: zaaNetPayment,
+    implementation: paymentImplementation,
+  },
+};
+fs.writeFileSync(outputPath, JSON.stringify(deploymentData, null, 2));
+console.log(`\n💾 Deployment info saved to ${outputPath}`);
 }
 
 main()

@@ -43,25 +43,26 @@ const config: HardhatUserConfig = {
   },
   etherscan: {
     apiKey: {
-      arbitrumSepolia: ETHERSCAN_API_KEY || "",
+      // Use Etherscan API key for all networks as Etherscan V2 API supports multiple chains
       arbitrumOne: ETHERSCAN_API_KEY || "",
-      baseSepolia: ETHERSCAN_API_KEY || process.env.BASESCAN_API_KEY || "",
+      arbitrumSepolia: ETHERSCAN_API_KEY || "",
+      baseSepolia: process.env.BASESCAN_API_KEY || ETHERSCAN_API_KEY || "",
     },
     customChains: [
-      {
-        network: "arbitrumSepolia",
-        chainId: 421614,
-        urls: {
-          apiURL: "https://api.etherscan.io/v2/api?chainid=421614",
-          browserURL: "https://sepolia.arbiscan.io",
-        },
-      },
       {
         network: "arbitrumOne",
         chainId: 42161,
         urls: {
           apiURL: "https://api.etherscan.io/v2/api?chainid=42161",
           browserURL: "https://arbiscan.io",
+        },
+      },
+      {
+        network: "arbitrumSepolia",
+        chainId: 421614,
+        urls: {
+          apiURL: "https://api.etherscan.io/v2/api?chainid=421614",
+          browserURL: "https://sepolia.arbiscan.io",
         },
       },
       {
